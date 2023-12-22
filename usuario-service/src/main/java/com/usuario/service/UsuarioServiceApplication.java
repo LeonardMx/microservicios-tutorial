@@ -12,7 +12,7 @@ import org.springframework.cloud.openfeign.FeignAutoConfiguration;
 @SpringBootApplication
 //@ImportAutoConfiguration({FeignAutoConfiguration.class})
 @EnableEurekaClient
-//@EnableDiscoveryClient
+@EnableDiscoveryClient
 public class UsuarioServiceApplication {
 
 	public static void main(String[] args) {

@@ -8,7 +8,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 @SpringBootApplication
 @EnableEurekaClient
-//@EnableDiscoveryClient
+@EnableDiscoveryClient
 public class CarroServiceApplication {
 
 	public static void main(String[] args) {
