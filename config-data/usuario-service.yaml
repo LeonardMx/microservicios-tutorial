@@ -1,5 +1,6 @@
 server:
-  port: ${PORT:${SERVER_PORT:0}} #Esta nueva linea te abre cualquier puerto que este disponible # 8001
+  port: ${PORT:${SERVER_PORT:0}} #Esta nueva linea te abre cualquier puerto que este disponible y te la marca en 0 
+      # 8001 si quisieras usar este puerto o uno predeterminado, marcas en el server http://localhost:8761/eureka/ 
 eureka:
   client: 
     registerWithEureka: true
