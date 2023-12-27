@@ -1,5 +1,5 @@
 server:
-  port: 8003
+  port: ${PORT:${SERVER_PORT:0}} #Esta nueva linea te abre cualquier puerto que este disponible # 8003
 eureka:
   client:
     registerWithEureka: true
@@ -7,5 +7,6 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka
     instance: 
-      hostname: localhost
+     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}} #Te da un puerto aleatorio
+     # hostname: localhost
 
