@@ -6,7 +6,7 @@ eureka:
   client:
     registerWithEureka: false
     fetchRegistry: false
-    serviceUrl: #al utilizar esta configuracion, cambiasel puerto en los demas clientes con el SERVER_PORT:0
+    serviceUrl: #al utilizar esta configuracion, cambias el puerto en los demas clientes con el SERVER_PORT:0
       defaultZone:  http://${eureka.instance.hostname}:${server.port}/eureka/ 
 
                     #Para usar esta configuracion en el server, en los clientes defines el port que quieras, 8001, 8002, 8003
