@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-@FeignClient(name = "carro-service", url = "http://localhost:8002") //indicas que microservicio y el lugar del microservicio
+@FeignClient(name = "carro-service") //indicas que microservicio y el lugar del microservicio
 @RequestMapping("/carro")
 public interface CarroFeignClient {
 
