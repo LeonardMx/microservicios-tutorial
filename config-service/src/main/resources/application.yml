@@ -6,7 +6,7 @@ spring:
             server:
                 # aqui tienes que cambiar sobre la rama que estas trabajando para que no haya problema
                 git:
-                    default-label: gateway 
+                    default-label: circuit-breaker
                     uri: https://github.com/LeonardMx/microservicios-tutorial
                     search-paths: config-data
     application:
